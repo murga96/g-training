@@ -5,7 +5,7 @@
             <input type="number" placeholder="Enter digits from 1 to 100" [formControl]="numberControl" required />
             <div class="error-message" *ngIf="this.numberControl.hasError('min')" >The value is lower than the minimum</div>
             <div class="error-message" *ngIf="this.numberControl.hasError('max')" >The value is greater than the maximun</div>
-            <button type="submit" [disabled]="numberControl.invalid" >Accept</button>
+            <button type="submit" [disabled]="numberControl.invalid" (click)="onClick()" >Accept</button>
         </div>
     </form>
 
