@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-site-restricted',
@@ -8,13 +7,9 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class SiteRestrictedComponent implements OnInit {
 
-  number: string | null= "";
-  constructor( private route: ActivatedRoute) { }
+  constructor() { }
 
-  ngOnInit() {
-     this.route.queryParamMap.subscribe((param) => {
-      this.number = param.get("number")
-    })
+  ngOnInit(): void {
   }
 
 }

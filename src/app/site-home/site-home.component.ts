@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './site-home.component.html',
   styleUrls: ['./site-home.component.scss'],
 })
-export class SiteHomeComponent /* implements OnInit */ {
+export class SiteHomeComponent implements OnInit {
   numberControl: FormControl = this.fb.control('', [
     Validators.required,
     Validators.min(1),
@@ -19,7 +19,6 @@ export class SiteHomeComponent /* implements OnInit */ {
     this.router.navigate(["site-restricted"], { queryParams: { number: this.numberControl.value } })
   }
 
-  // ngOnInit(): void {
-  //   this.titleService.setTitle('Site - Home');
-  // }
+  ngOnInit(): void {
+  }
 }

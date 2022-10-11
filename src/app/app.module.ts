@@ -4,21 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomLoadingGuard } from './custom-loading.guard';
 import { SiteHomeComponent } from './site-home/site-home.component';
-import { SiteRestrictedComponent } from './site-restricted/site-restricted.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SiteHomeComponent,
-    SiteRestrictedComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CustomLoadingGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
