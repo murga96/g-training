@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomLoadingGuard } from './custom-loading.guard';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { RestrictGuardGuard } from './restrict-guard.guard';
+import { RestrictGuard } from './restrict-guard.guard';
 import { SiteHomeComponent } from './site-home/site-home.component';
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
       import('./site-restricted/site-restricted.module').then(
         (m) => m.SiteRestrictedModule
       ),
-    canActivate: [RestrictGuardGuard],
+    canActivate: [RestrictGuard],
     canLoad: [CustomLoadingGuard],
     title: 'Site - Restricted',
   },

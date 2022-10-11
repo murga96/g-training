@@ -1,11 +1,15 @@
 <h1>Site - Home</h1>
 <div class="container">
     <form >
-        <div style="display:block">
-            <input type="number" placeholder="Enter digits from 1 to 100" [formControl]="numberControl" required />
+        <div class="form-container">
+            <div style="margin-bottom: 1rem">
+                <input type="number" placeholder="Enter digits from 1 to 100" [formControl]="numberControl" required />
+            </div>
             <div class="error-message" *ngIf="this.numberControl.hasError('min')" >The value is lower than the minimum</div>
             <div class="error-message" *ngIf="this.numberControl.hasError('max')" >The value is greater than the maximun</div>
-            <button type="button" [disabled]="numberControl.invalid" (click)="onClick()" >Accept</button>
+            <div class="div-button">
+                <button class="button" type="button" [disabled]="numberControl.invalid" (click)="onClick()" >Accept</button>
+            </div>
         </div>
     </form>
 
