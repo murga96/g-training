@@ -18,7 +18,7 @@ export class SiteHomeComponent implements OnInit {
   onClick() {
     this.router.navigate(["site-restricted"], { queryParams: { number: this.numberControl.value } })
   }
-
+  
   ngOnInit(): void {
   }
 }

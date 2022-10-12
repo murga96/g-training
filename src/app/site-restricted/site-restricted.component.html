@@ -1,1 +1,7 @@
-<p>site-restricted works!</p>
+<div id="container" class="container" [style.width.%]="width">
+    <div #square (window:resize)="0" [ngStyle]="{
+  width: this.width*0.25 + '%', 
+  height: square.offsetWidth +'px'
+}" class="square" >
+    </div>
+</div>
