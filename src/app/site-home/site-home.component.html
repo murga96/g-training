@@ -8,7 +8,8 @@
             <div class="error-message" *ngIf="this.numberControl.hasError('min')" >The value is lower than the minimum</div>
             <div class="error-message" *ngIf="this.numberControl.hasError('max')" >The value is greater than the maximun</div>
             <div class="div-button">
-                <button id="button" class="button" type="button" [disabled]="numberControl.invalid" (click)="onClick()" >Accept</button>
+                <button #button class="button" (mouseleave)="onMouseLeave()" (mouseenter)="onMouseEnter()" type="button tooltip" [disabled]="numberControl.invalid" (click)="onClick()" >Accept</button>
+                <span #tooltip [ngStyle]="tooltipAppear" class="tooltiptext"></span>
             </div>
         </div>
         
