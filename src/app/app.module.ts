@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { CustomLoadingGuard } from './custom-loading.guard';
 import { SiteHomeComponent } from './site-home/site-home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatButtonModule,
   ],
   providers: [CustomLoadingGuard],
   bootstrap: [AppComponent]
