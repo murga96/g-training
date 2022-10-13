@@ -1,20 +1,17 @@
-import {
-  Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
-  ViewChild,
-} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-site-restricted',
   templateUrl: './site-restricted.component.html',
   styleUrls: ['./site-restricted.component.scss'],
 })
-export class SiteRestrictedComponent implements OnInit {
+export class SiteRestrictedComponent {
   @ViewChild('square', { static: false })
   square!: ElementRef;
   width: number = 0;
+  height: number = 0;
+  margin: number = 0;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -22,7 +19,18 @@ export class SiteRestrictedComponent implements OnInit {
     console.log(this.width, 'width');
   }
 
+  ngAfterViewInit(): void {
+    Promise.resolve().then(() => /* { */
+     ( this.height = this.square.nativeElement.offsetWidth)
+      // this.margin = this.square.nativeElement.offsetWidth / 2
+    /* } */);
+  }
+
+  resize() {
+    this.height = this.square.nativeElement.offsetWidth
+  }
+
   random(min: number, max: number) {
-    return Math.round(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min) + min);
   }
 }

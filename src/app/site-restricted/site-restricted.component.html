@@ -1,7 +1,8 @@
 <div id="container" class="container" [style.width.%]="width">
-    <div #square (window:resize)="0" [ngStyle]="{
-  width: this.width*0.25 + '%', 
-  height: square.offsetWidth +'px'
-}" class="square" >
+    <div #square (window:resize)="resize()" [ngStyle]="{
+  width: '25%', 
+  height: height + 'px',
+  marginLeft: '-' + square.offsetWidth +'px'}" class="square" >
     </div>
 </div>
+<!-- height: square.offsetWidth + 'px', -->

@@ -7,7 +7,9 @@
     top: 50%;
     left: 50%;
     height: 100vh;
-    margin: -35px 0 0 -35px;
+    max-width: 177px;
+    //move the width and height half
+    margin: -7.5px 0 0 -84.5px;
 }
 .div-button {
     position: relative;
@@ -45,6 +47,7 @@
     bottom: 200%;
     left: 50%;
     margin-left: -60px;
+    margin-bottom: -1rem;
   
     /* Fade in tooltip */
     opacity: 0;
