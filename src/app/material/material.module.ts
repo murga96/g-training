@@ -19,6 +19,7 @@ import { TopCitiesComponent } from './top-cities/top-cities.component';
 import { SocialSalesComponent } from './social-sales/social-sales.component';
 import { MonthEarningComponent } from './month-earning/month-earning.component';
 import { SpinnerPercentComponent } from './spinner-percent/spinner-percent.component';
+import { ViewButtonComponent } from './view-button/view-button.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SpinnerPercentComponent } from './spinner-percent/spinner-percent.compo
     TopCitiesComponent,
     SocialSalesComponent,
     MonthEarningComponent,
-    SpinnerPercentComponent
+    SpinnerPercentComponent,
+    ViewButtonComponent
   ],
   imports: [
     CommonModule,
