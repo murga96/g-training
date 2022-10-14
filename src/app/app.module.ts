@@ -22,8 +22,6 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatButtonModule,
   ],
   providers: [CustomLoadingGuard],
   bootstrap: [AppComponent]

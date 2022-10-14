@@ -12,6 +12,7 @@ import { MatCardModule} from '@angular/material/card';
 import { TableComponent } from './table/table.component';
 import { ButtonLabelComponent } from './button-label/button-label.component';
 import { ActivityComponent } from './activity/activity.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ActivityComponent } from './activity/activity.component';
     MatIconModule,
     MatChipsModule,
     MatCardModule,
+    MatStepperModule,
   ]
 })
 export class MaterialModule { }
