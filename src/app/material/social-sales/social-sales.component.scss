@@ -1,0 +1,47 @@
+.div-top-social {
+    display: flex;
+    margin: 1rem 0 1rem 0 !important;
+    align-items: center;
+    flex-direction: column;
+}
+.social-sales {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem 0 !important;
+    justify-content: space-around;
+}
+.text-desc {
+    color: grey;
+    text-overflow: ellipsis;
+    padding: 0 2rem 0 2rem ;
+}
+.icon {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    margin-bottom: 1rem;
+}
+
+.min-icon {
+    position: relative;
+    font-size: 35px !important;
+    width: 35px !important;
+    height: 35px !important;
+    margin-bottom: 1rem;
+}
+
+.min-icon .mat-icon {
+    color: white;
+    position: absolute;
+    bottom: 5.5px;
+    right: 5.5px;
+}
+
+@media (min-width: 500px) {
+    .icon {
+        font-size: 60px;
+        height: 60px;
+        width: 60px;
+        margin-bottom: 1rem;
+    }
+  }

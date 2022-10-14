@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface TopCitiesSellingProducts {
+interface TopCitiesSellingProducts {
   name: string;
   productsCount: number;
   percent: number;
@@ -17,8 +17,8 @@ export class TopCitiesComponent implements OnInit {
   ];
 
   cities: TopCitiesSellingProducts[] = [
-    { name: 'San Francisco', productsCount: 1456, percent: 81 },
     { name: 'Los Angeles', productsCount: 1123, percent: 61 },
+    { name: 'San Francisco', productsCount: 1456, percent: 81 },
     { name: 'San Diego', productsCount: 1026, percent: 40 },
   ];
   getColor(percent: number):string {
@@ -30,7 +30,9 @@ export class TopCitiesComponent implements OnInit {
     return 'warn'
   }
 
-  constructor() { }
+  constructor() { 
+    this.cities = this.cities.sort((a, b) => b.productsCount - a.productsCount)
+  }
 
   ngOnInit(): void {
   }

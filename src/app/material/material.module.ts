@@ -15,6 +15,7 @@ import { ButtonLabelComponent } from './button-label/button-label.component';
 import { ActivityComponent } from './activity/activity.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import { TopCitiesComponent } from './top-cities/top-cities.component';
+import { SocialSalesComponent } from './social-sales/social-sales.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TopCitiesComponent } from './top-cities/top-cities.component';
     TableComponent,
     ButtonLabelComponent,
     ActivityComponent,
-    TopCitiesComponent
+    TopCitiesComponent,
+    SocialSalesComponent
   ],
   imports: [
     CommonModule,
