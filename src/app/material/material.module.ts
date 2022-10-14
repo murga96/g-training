@@ -10,12 +10,15 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatChipsModule} from '@angular/material/chips';
 import { MatCardModule} from '@angular/material/card';
 import { MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { TableComponent } from './table/table.component';
 import { ButtonLabelComponent } from './button-label/button-label.component';
 import { ActivityComponent } from './activity/activity.component';
-import {MatStepperModule} from '@angular/material/stepper';
 import { TopCitiesComponent } from './top-cities/top-cities.component';
 import { SocialSalesComponent } from './social-sales/social-sales.component';
+import { MonthEarningComponent } from './month-earning/month-earning.component';
+import { SpinnerPercentComponent } from './spinner-percent/spinner-percent.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { SocialSalesComponent } from './social-sales/social-sales.component';
     ButtonLabelComponent,
     ActivityComponent,
     TopCitiesComponent,
-    SocialSalesComponent
+    SocialSalesComponent,
+    MonthEarningComponent,
+    SpinnerPercentComponent
   ],
   imports: [
     CommonModule,
@@ -37,6 +42,7 @@ import { SocialSalesComponent } from './social-sales/social-sales.component';
     MatCardModule,
     MatStepperModule,
     MatProgressBarModule,
+    MatProgressSpinnerModule,
   ]
 })
 export class MaterialModule { }

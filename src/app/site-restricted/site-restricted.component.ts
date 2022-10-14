@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { random } from '../utils';
 
 @Component({
   selector: 'app-site-restricted',
@@ -15,7 +16,7 @@ export class SiteRestrictedComponent {
   constructor() {}
 
   ngOnInit(): void {
-    this.width = this.random(50, 101);
+    this.width = random(50, 101);
     console.log(this.width, 'width');
   }
 
@@ -30,7 +31,5 @@ export class SiteRestrictedComponent {
     this.height = this.square.nativeElement.offsetWidth
   }
 
-  random(min: number, max: number) {
-    return Math.floor(Math.random() * (max - min) + min);
-  }
+  
 }

@@ -1,0 +1,31 @@
+<mat-card>
+  <div class="container">
+    <div>
+      <mat-card-title-group>
+        <mat-card-title>Monthly Earning</mat-card-title>
+        <mat-card-subtitle style="margin-top: 1.5rem"
+          >This month</mat-card-subtitle
+        >
+        <mat-card-title>{{
+          monthEarning | currency: "USD":"symbol":"1.0-0"
+        }}</mat-card-title>
+        <mat-card-subtitle>
+          {{percent}}%
+          <mat-icon class="arrow-icon">straight</mat-icon>
+          From previous period
+        </mat-card-subtitle>
+      </mat-card-title-group>
+      <button mat-raised-button color="primary">
+        View More
+        <mat-icon>arrow_right_alt</mat-icon>
+      </button>
+    </div>
+    <app-spinner-percent
+      label="Series A"
+      [percent]="value"
+    ></app-spinner-percent>
+  </div>
+  <mat-card-subtitle style="margin-top: 1rem"
+    >We craft digital, graphic and dimension thinking</mat-card-subtitle
+  >
+</mat-card>

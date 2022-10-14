@@ -1,2 +1,6 @@
 @use "@material/layout-grid/mdc-layout-grid";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-card-title {
+    font-size: 16px !important;
+}
