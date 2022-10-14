@@ -1,0 +1,22 @@
+<mat-card>
+    <label class="title">Top Cities Selling Product</label>
+    <div class="div-top-city">
+        <mat-icon class="icon" color="primary">pin_drop</mat-icon>
+        <label class="title" style="font-size: 1.2rem;margin-bottom: 0.2rem;">{{cities[0].productsCount | number}}</label>
+        <label class="subtitle">{{cities[0].name}}</label>
+    </div>
+    <mat-table [dataSource]="cities">
+        <ng-container matColumnDef="name">
+            <mat-cell class="subtitle" *matCellDef="let elem">{{elem.name}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="count">
+            <mat-cell class="title" *matCellDef="let elem">{{elem.productsCount | number}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="progress-bar">
+            <mat-cell *matCellDef="let elem">
+                <mat-progress-bar [color]="getColor(elem.percent)" mode="determinate" value={{elem.percent}}></mat-progress-bar>
+            </mat-cell>
+        </ng-container>
+        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+</mat-card>
