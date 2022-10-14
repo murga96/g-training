@@ -10,11 +10,15 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatChipsModule} from '@angular/material/chips';
 import { MatCardModule} from '@angular/material/card';
 import { TableComponent } from './table/table.component';
+import { ButtonLabelComponent } from './button-label/button-label.component';
+import { ActivityComponent } from './activity/activity.component';
 
 @NgModule({
   declarations: [
     MaterialComponent,
-    TableComponent
+    TableComponent,
+    ButtonLabelComponent,
+    ActivityComponent
   ],
   imports: [
     CommonModule,

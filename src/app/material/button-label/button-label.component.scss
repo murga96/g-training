@@ -1,0 +1,19 @@
+mat-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    color: grey;
+}
+
+.label {
+    font-size: large;
+    font-weight: 500;
+}
