@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    margin-top: 1rem;
+  }
+.label {
+  font-weight: 900;
+}
+
+.mat-header-cell {
+  font-weight: bold !important;
+  color: black;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+}
+
+.orderId {
+  font-weight: bold !important;
+}
+
+.paymentMethod {
+  vertical-align: super;
+}
+
+.paymentStatus {
+  opacity: 0.6;
+}
+
+td button {
+    border-radius: 3rem;
+}

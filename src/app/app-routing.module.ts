@@ -23,6 +23,7 @@ const routes: Routes = [
     component: NotFoundComponent,
     title: 'Site – Not found',
   },
+  { path: 'material', loadChildren: () => import('./material/material.module').then(m => m.MaterialModule) },
   { path: '**', redirectTo: '/not-found' },
 ];
 
