@@ -1,11 +1,88 @@
-<div style="padding: 3rem;">
-    <!-- <app-table></app-table>
-    <!-- <app-button-label title="Orders" label="1235" icon="description"></app-button-label> -->
-    <!-- <app-button-label title="Revenue" label="35723" icon="archive" [isCurrency]="true"></app-button-label>
-    <app-button-label title="Average Price" label="16.2" icon="sell" [isCurrency]="true"></app-button-label> -->
-    <!-- <app-activity></app-activity> -->
-    <!-- <app-top-cities></app-top-cities> -->
-    <!-- <app-social-sales></app-social-sales> -->
-    <!-- <app-month-earning></app-month-earning> -->
-    <app-welcome-back></app-welcome-back>
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--align-top mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop"
+    >
+      <div class="mdc-layout-grid__inner">
+        <div
+          class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-4-desktop"
+        >
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop"
+            >
+              <app-welcome-back></app-welcome-back>
+            </div>
+
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop"
+            >
+              <app-month-earning></app-month-earning>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mdc-layout-grid__cell mdc-layout-grid__cell--align-top mdc-layout-grid__cell--span-8-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-8-desktop"
+        >
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--align-top mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-desktop"
+            >
+              <app-button-label
+                title="Orders"
+                label="1235"
+                icon="description"
+              ></app-button-label>
+            </div>
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop"
+            >
+              <app-button-label
+                title="Revenue"
+                label="35723"
+                icon="archive"
+                [isCurrency]="true"
+              ></app-button-label>
+            </div>
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--align-top mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop"
+            >
+              <app-button-label
+                title="Average Price"
+                label="16.2"
+                icon="sell"
+                [isCurrency]="true"
+              ></app-button-label>
+            </div>
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-12-desktop"
+            >
+              <app-table></app-table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop"
+    >
+      <app-activity></app-activity>
+    </div>
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop"
+    >
+      <app-top-cities></app-top-cities>
+    </div>
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop"
+    >
+      <app-social-sales></app-social-sales>
+    </div>
+    <div
+      class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop"
+    >
+      <app-table></app-table>
+    </div>
+  </div>
 </div>
