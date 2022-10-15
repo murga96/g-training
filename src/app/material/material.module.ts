@@ -20,6 +20,7 @@ import { SocialSalesComponent } from './social-sales/social-sales.component';
 import { MonthEarningComponent } from './month-earning/month-earning.component';
 import { SpinnerPercentComponent } from './spinner-percent/spinner-percent.component';
 import { ViewButtonComponent } from './view-button/view-button.component';
+import { WelcomeBackComponent } from './welcome-back/welcome-back.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ViewButtonComponent } from './view-button/view-button.component';
     SocialSalesComponent,
     MonthEarningComponent,
     SpinnerPercentComponent,
-    ViewButtonComponent
+    ViewButtonComponent,
+    WelcomeBackComponent
   ],
   imports: [
     CommonModule,

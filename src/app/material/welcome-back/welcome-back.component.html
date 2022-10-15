@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title style="font-weight: 600">Welcome back !</mat-card-title>
+    <mat-card-subtitle style="color: cornflowerblue"
+      >Skate Dashboard</mat-card-subtitle
+    >
+    <img
+      class="avatar"
+      mat-card-avatar
+      src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      alt="Profile picture"
+    />
+  </mat-card-header>
+  <mat-card-content class="content">
+    <div class="div-principal-data">
+      <mat-card-title>{{ worker.name }}</mat-card-title>
+      <mat-card-subtitle>{{ worker.jobPosition }}</mat-card-subtitle>
+    </div>
+    <div class="div-secondary-data">
+      <div class="content">
+        <div>
+          <mat-card-title>{{ worker.projects }}</mat-card-title>
+          <mat-card-subtitle>Projects</mat-card-subtitle>
+        </div>
+        <div>
+          <mat-card-title>{{ worker.revenue }}</mat-card-title>
+          <mat-card-subtitle>Revenue</mat-card-subtitle>
+        </div>
+      </div>
+      <app-view-button text="View Profile"></app-view-button>
+    </div>
+  </mat-card-content>
+</mat-card>
