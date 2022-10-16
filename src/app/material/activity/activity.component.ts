@@ -18,7 +18,7 @@ export class ActivityComponent implements OnInit {
 
   getDatePipe(date: Date): string {
     console.log(date, 'date')
-    return 's'
+    return date.toLocaleDateString("en-US", {day: "numeric", month: "short"})
   }
 
   constructor() {}

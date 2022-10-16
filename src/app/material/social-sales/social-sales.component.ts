@@ -26,7 +26,7 @@ export class SocialSalesComponent implements OnInit {
     else if(social === "Twitter"){
         return {backgroundColor: "cornflowerblue"}
     }
-    return{ backgroundColor: "red"  }  
+    return{ backgroundColor: "crimson"  }  
   }
 
   constructor() { 

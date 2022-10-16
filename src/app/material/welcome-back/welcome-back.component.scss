@@ -1,32 +1,39 @@
 .mat-card-header {
     position: relative;
     background-color: lightblue;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Foffice-cartoon&psig=AOvVaw0Ap8Y9RLjqqp-SEqurpl6M&ust=1665877572279000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjh09nz4PoCFQAAAAAdAAAAABAK");
+    background-image: url("https://blog.payworks.ca/hubfs/BlogBanner_December2020_2.jpg");
+    background-size: 112% auto;
     padding: 0.5rem;
     color: cornflowerblue;
 }
+
 .mat-card {
     padding: 0 0 0 0;
 }
+
 .mat-card-sub {
     padding: 0 0 0 0;
 }
+
 .avatar {
     position: absolute;
     top: 60px;
     left: 20px;
     border: 3px solid #fff;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .div-principal-data {
     flex: 1 0 0;
     margin: 3.5rem 0 1rem 20px !important;
     min-width: 85px;
 }
+
 .div-secondary-data {
     flex: 2 0 0;
     margin: 1rem !important;

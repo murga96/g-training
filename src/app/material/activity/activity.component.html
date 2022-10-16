@@ -2,7 +2,7 @@
     <label class="title">Activity</label>
     <mat-stepper  orientation="vertical" linear="false">
 
-        <mat-step *ngFor="let activity of activities;" label={{activity.date}} >
+        <mat-step *ngFor="let activity of activities;" [label]="getDatePipe(activity.date)" >
             <p>{{activity.description}}</p>
         </mat-step>
         <ng-template matStepperIcon="edit">
