@@ -1,7 +1,11 @@
 table {
-    width: 100%;
-    margin-top: 1rem;
-  }
+  width: 100%;
+  margin-top: 1rem;
+}
+
+mat-card-content {
+  overflow-x: scroll;
+}
 
 .mat-header-cell {
   font-weight: bold !important;
@@ -23,5 +27,5 @@ table {
 }
 
 td button {
-    border-radius: 3rem;
+  border-radius: 3rem;
 }

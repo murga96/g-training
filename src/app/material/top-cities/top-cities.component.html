@@ -2,10 +2,10 @@
     <label class="title">Top Cities Selling Product</label>
     <div class="div-top-city">
         <mat-icon class="icon" color="primary">pin_drop</mat-icon>
-        <label class="title" style="font-size: 1.2rem;margin-bottom: 0.2rem;">{{cities[0].productsCount | number}}</label>
+        <label class="title" style="font-size: 1.2rem;margin-bottom: 0.7rem;">{{cities[0].productsCount | number}}</label>
         <label class="subtitle">{{cities[0].name}}</label>
     </div>
-    <mat-table [dataSource]="cities">
+    <mat-table class="table" [dataSource]="cities">
         <ng-container matColumnDef="name">
             <mat-cell class="subtitle" *matCellDef="let elem">{{elem.name}}</mat-cell>
         </ng-container>

@@ -5,10 +5,14 @@
     flex-direction: column;
 }
 
+.mat-card {
+    // max-height: 450px;
+}
+
 .social-sales {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0 1rem 0 !important;
+    margin: 1rem 0 0 0 !important;
     justify-content: space-around;
 }
 
@@ -17,6 +21,13 @@
     text-align: center;
     text-overflow: ellipsis;
     padding: 0 2rem 0 2rem;
+}
+
+.text-desc a {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    color: royalblue;
 }
 
 .icon {
@@ -51,7 +62,7 @@
 
 .inline-icon {
     position: relative;
-    top: 12px;
+    top: 2px;
     right: 3px;
     font-size: medium;
 }
