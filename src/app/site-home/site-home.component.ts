@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class SiteHomeComponent implements OnInit {
   @ViewChild('button', {static: false}) button !: ElementRef;
   @ViewChild('tooltip', {static: false}) tooltip !: ElementRef;
+  myContext = {$implicit: 'World', localSk: 'Svet'};
   numberControl: FormControl = this.fb.control('', [
     Validators.required,
     Validators.min(1),
