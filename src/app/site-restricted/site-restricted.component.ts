@@ -21,6 +21,7 @@ export class SiteRestrictedComponent {
   }
 
   ngAfterViewInit(): void {
+    console.log(this.square.nativeElement.offsetWidth, 'jjj')
     Promise.resolve().then(() => /* { */
      ( this.height = this.square.nativeElement.offsetWidth)
       // this.margin = this.square.nativeElement.offsetWidth / 2
