@@ -21,6 +21,8 @@ import { MonthEarningComponent } from './month-earning/month-earning.component';
 import { SpinnerPercentComponent } from './spinner-percent/spinner-percent.component';
 import { ViewButtonComponent } from './view-button/view-button.component';
 import { WelcomeBackComponent } from './welcome-back/welcome-back.component';
+import { EmailSentComponent } from './email-sent/email-sent.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { WelcomeBackComponent } from './welcome-back/welcome-back.component';
     MonthEarningComponent,
     SpinnerPercentComponent,
     ViewButtonComponent,
-    WelcomeBackComponent
+    WelcomeBackComponent,
+    EmailSentComponent
   ],
   imports: [
     CommonModule,
@@ -47,6 +50,7 @@ import { WelcomeBackComponent } from './welcome-back/welcome-back.component';
     MatStepperModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    HighchartsChartModule,
   ]
 })
 export class MaterialModule { }
