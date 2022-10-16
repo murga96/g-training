@@ -8,30 +8,20 @@
         </div>
     </div>
     <div class="text-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div style="text-align: center; color: royalblue" >
+            Learn more
+            <mat-icon class="inline-icon">chevron_right</mat-icon>
+        </div>
     </div>
         <div class="social-sales">
             <div class="div-top-social" *ngFor="let social of socialSources" >
-                <button [ngStyle]="getMinSocialStyle(social.social)"class="min-icon" style="cursor: auto;" mat-fab>
-                    <mat-icon>{{social.social.toLowerCase()}}</mat-icon>
+                <button [ngStyle]="getMinSocialStyle(social.social)" class="min-icon" style="cursor: auto;" mat-fab>
+                    <span class="{{social.social.toLowerCase()}}"></span>
                 </button>
                 <label style="font-size: 1.1rem;margin-bottom: 0.2rem;">{{social.social}}</label>
                 <label class="subtitle">{{social.sales}} sales</label>
             </div>
         </div>
-    <!--<mat-table [dataSource]="cities">
-        <ng-container matColumnDef="name">
-            <mat-cell class="subtitle" *matCellDef="let elem">{{elem.name}}</mat-cell>
-        </ng-container>
-        <ng-container matColumnDef="count">
-            <mat-cell class="title" *matCellDef="let elem">{{elem.productsCount | number}}</mat-cell>
-        </ng-container>
-        <ng-container matColumnDef="progress-bar">
-            <mat-cell *matCellDef="let elem">
-                <mat-progress-bar [color]="getColor(elem.percent)" mode="determinate" value={{elem.percent}}></mat-progress-bar>
-            </mat-cell>
-        </ng-container>
-        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-    </mat-table> -->
 </mat-card>
 

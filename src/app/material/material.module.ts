@@ -51,6 +51,6 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MatProgressBarModule,
     MatProgressSpinnerModule,
     HighchartsChartModule,
-  ]
+  ],
 })
 export class MaterialModule { }

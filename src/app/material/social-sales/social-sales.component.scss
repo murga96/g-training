@@ -4,17 +4,20 @@
     align-items: center;
     flex-direction: column;
 }
+
 .social-sales {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem 0 1rem 0 !important;
     justify-content: space-around;
 }
+
 .text-desc {
     color: grey;
     text-overflow: ellipsis;
-    padding: 0 2rem 0 2rem ;
+    padding: 0 2rem 0 2rem;
 }
+
 .icon {
     font-size: 35px;
     height: 35px;
@@ -30,11 +33,10 @@
     margin-bottom: 1rem;
 }
 
-.min-icon .mat-icon {
-    color: white;
+.min-icon span {
     position: absolute;
-    bottom: 5.5px;
-    right: 5.5px;
+    bottom: 10.5px;
+    right: 9.5px;
 }
 
 @media (min-width: 500px) {
@@ -44,4 +46,23 @@
         width: 60px;
         margin-bottom: 1rem;
     }
-  }
+}
+
+.inline-icon {
+    position: relative;
+    top: 12px;
+    right: 3px;
+    font-size: medium;
+}
+
+.instagram {
+    content: url('https://api.iconify.design/akar-icons/instagram-fill.svg?color=white');
+}
+
+.twitter {
+    content: url('https://api.iconify.design/akar-icons/twitter-fill.svg?color=white');
+}
+
+.facebook {
+    content: url('https://api.iconify.design/akar-icons/facebook-fill.svg?color=white');
+}

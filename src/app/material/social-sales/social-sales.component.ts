@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import 'iconify-icon';
 
 interface SocialSales {
   social: string;
