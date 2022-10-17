@@ -1,19 +1,16 @@
+.mat-card {
+    padding: 0 0 0 0;
+    height: 100%;
+}
+
 .mat-card-header {
+    height: 25%;
     position: relative;
     background-color: lightblue;
     background-image: url("https://blog.payworks.ca/hubfs/BlogBanner_December2020_2.jpg");
     background-size: 112% auto;
     padding: 0.5rem;
     color: cornflowerblue;
-}
-
-
-.mat-card {
-    padding: 0 0 0 0;
-}
-
-.mat-card-sub {
-    padding: 0 0 0 0;
 }
 
 .avatar {
@@ -23,25 +20,69 @@
     border: 3px solid #fff;
 }
 
-.content {
+.mat-card-sub {
+    padding: 0 0 0 0;
+}
+
+
+.mat-card-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    height: 70%;
 }
 
 .div-principal-data {
     flex: 1 0 0;
-    margin: 3.5rem 0 1rem 20px !important;
+    margin: 0 0 1rem 20px !important;
+    align-self: flex-end;
     min-width: 85px;
 }
 
 .div-secondary-data {
     flex: 2 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin: 1rem !important;
 }
+.div-secondary-data-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-@media (min-width: 272px) {
-    .div-principal-data .mat-card-subtitle {
-        margin-bottom: 0 !important;
+@media (max-width: 840px) and (min-width: 600px) {
+    .div-principal-data {
+        flex: 1 0 0;
+        margin: 0 0 0rem 20px !important;
+        align-self: center;
+        min-width: 85px;
+    }
+    .div-principal-data .mat-card-title {
+        margin-top: 2rem;
+    }
+    .avatar {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        border: 3px solid #fff;
+        width: 4rem;
+        height: 4rem;
     }
 }
+@media (max-width: 600px) {
+    .avatar {
+        position: absolute;
+        top: 55px;
+        left: 20px;
+        border: 3px solid #fff;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+// @media (max-width: 840px) {
+//     .div-principal-data {
+//         margin-top: 5rem !important;
+//     }
+// }
