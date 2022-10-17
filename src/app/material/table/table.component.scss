@@ -1,10 +1,43 @@
-table {
+.mat-table {
   width: 100%;
   margin-top: 1rem;
+  overflow-x: auto;
 }
 
-mat-card-content {
-  overflow-x: scroll;
+$displayedColumns: 'select',
+  'orderId',
+  'billingName',
+  'date',
+  'total',
+  'paymentStatus',
+  'paymentMethod',
+  'action';
+
+@each $item in $displayedColumns {
+  .mat-column-#{$item} {
+    @if $item =="orderId" {
+      font-weight: bold !important;
+    }
+
+    @if $item =="select" {
+      min-width: 2rem;
+      max-width: 2rem;
+    }@else if $item =='paymentStatus' or $item == 'paymentMethod' {
+      min-width: 9rem;
+    }@else {
+      min-width: 7rem;
+    }
+    @media(max-width: 800px){
+      @if $item !='paymentStatus' and $item !='paymentMethod' {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.mat-column-action button {
+  border-radius: 3rem;
 }
 
 .mat-header-cell {
@@ -13,9 +46,15 @@ mat-card-content {
   font-size: 0.9rem;
   background-color: whitesmoke;
 }
-
-.orderId {
-  font-weight: bold !important;
+@media(max-width: 800px){
+  .mat-header-cell {
+    display: flex;
+    justify-content: center;
+    font-weight: bold !important;
+    color: black;
+    font-size: 0.9rem;
+    background-color: whitesmoke;
+  }
 }
 
 .paymentMethod {
@@ -24,8 +63,4 @@ mat-card-content {
 
 .paymentStatus {
   opacity: 0.6;
-}
-
-td button {
-  border-radius: 3rem;
 }
